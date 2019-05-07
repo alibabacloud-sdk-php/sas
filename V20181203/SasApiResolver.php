@@ -8,6 +8,11 @@ use AlibabaCloud\Rpc;
 /**
  * Resolve Api based on the method name.
  *
+ * @method ModifyAssetGroup modifyAssetGroup(array $options = [])
+ * @method DescribeAssetDetailByUuid describeAssetDetailByUuid(array $options = [])
+ * @method DescribeSasLeftCondition describeSasLeftCondition(array $options = [])
+ * @method DescribeGroupStruct describeGroupStruct(array $options = [])
+ * @method DescribeAssetList describeAssetList(array $options = [])
  * @method ModifyPushAllTask modifyPushAllTask(array $options = [])
  * @method DescribeCheckWarningDetail describeCheckWarningDetail(array $options = [])
  * @method DescribeWarningMachines describeWarningMachines(array $options = [])
@@ -60,6 +65,68 @@ class V20181203Rpc extends Rpc
 
     /** @var string */
     public $serviceCode = 'sas';
+}
+
+/**
+ * @method string getSourceIp()
+ * @method $this withSourceIp($value)
+ * @method string getGroupId()
+ * @method $this withGroupId($value)
+ * @method string getUuids()
+ * @method $this withUuids($value)
+ */
+class ModifyAssetGroup extends V20181203Rpc
+{
+}
+
+/**
+ * @method string getSourceIp()
+ * @method $this withSourceIp($value)
+ * @method string getLang()
+ * @method $this withLang($value)
+ * @method string getUuid()
+ * @method $this withUuid($value)
+ */
+class DescribeAssetDetailByUuid extends V20181203Rpc
+{
+}
+
+/**
+ * @method string getSourceIp()
+ * @method $this withSourceIp($value)
+ * @method string getConditionType()
+ * @method $this withConditionType($value)
+ * @method string getLang()
+ * @method $this withLang($value)
+ * @method string getFilterConditions()
+ * @method $this withFilterConditions($value)
+ */
+class DescribeSasLeftCondition extends V20181203Rpc
+{
+}
+
+/**
+ * @method string getSourceIp()
+ * @method $this withSourceIp($value)
+ */
+class DescribeGroupStruct extends V20181203Rpc
+{
+}
+
+/**
+ * @method string getSourceIp()
+ * @method $this withSourceIp($value)
+ * @method string getPageSize()
+ * @method $this withPageSize($value)
+ * @method string getCurrentPage()
+ * @method $this withCurrentPage($value)
+ * @method string getLang()
+ * @method $this withLang($value)
+ * @method string getFilterConditions()
+ * @method $this withFilterConditions($value)
+ */
+class DescribeAssetList extends V20181203Rpc
+{
 }
 
 /**
